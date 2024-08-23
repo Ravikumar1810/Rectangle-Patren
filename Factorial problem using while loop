@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class facto {
+    int fact(int n) {
+        if (n == 1 || n == 0) {
+            return 1;
+        } else {
+            return n * fact(n - 1);
+        }
+    }
+
+    void show() {
+        int i = 1;
+        while (i <= 10) {
+            int ans = fact(i);
+            i++;
+            System.out.println(ans + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        facto obj = new facto();
+        obj.show();
+    }
+}
