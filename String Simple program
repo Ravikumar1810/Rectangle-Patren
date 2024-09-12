@@ -1,0 +1,13 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Rbdr {
+    public static void main(String[] args) throws java.io.IOException {
+        String str;
+        InputStreamReader ir = new InputStreamReader(System.in);
+        BufferedReader input = new BufferedReader(ir);
+        System.out.println("Enter the name : ");
+        str = input.readLine();
+        System.out.println("String entered is ="+str);
+    }
+}
