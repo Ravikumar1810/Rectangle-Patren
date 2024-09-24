@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class SquareRootExample1 {
+    public static double SquareRoot(int n) {
+        double t;
+        double Squareroot = n/2;
+        do {
+            t = Squareroot;
+            Squareroot =(t+(n/t))/2;
+        }
+        while ((t-Squareroot)!=0);
+        return Squareroot;
+    }
+}
+
+class Squarerootex {
+    public static void main(String[] args) {
+        SquareRootExample1 sqr = new SquareRootExample1();
+        System.out.println("Enter a number:");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println("The Square root of "+num+ "is: " +sqr.SquareRoot(num));
+    }
+}
+
+
