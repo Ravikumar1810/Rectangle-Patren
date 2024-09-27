@@ -1,0 +1,31 @@
+import java.util.*;
+
+class Palindrome
+{
+	void checkpalindrome(int num)
+	{
+		int rev, sum=0,temp;
+		temp=num;
+		while(num>0)
+		{
+			rev=num%10;
+			sum=(sum*10)+rev;
+			num=num/10;
+		} 
+		if (temp==sum)
+			System.out.println("Entered number is a palindrome.");
+		else
+			System.out.println("Entered number isn't a palindrome.");
+	}
+}
+class PalindromeEx
+{
+	public static void main(String args[])
+	{
+		Palindrome pal=new Palindrome();
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a number to check if it is a palindrome");
+		int original = in.nextInt();
+		pal.checkpalindrome(original);		
+	}
+}
