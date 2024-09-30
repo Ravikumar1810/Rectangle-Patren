@@ -1,0 +1,26 @@
+class Overloadex {
+    //Constructor overloading
+    Overloadex()
+    {
+        System.out.println("Welcome");
+    }
+    Overloadex(String name) {
+        System.out.println("Welcome"  +name);
+    }
+    //Methiod Overloading
+    public void add(int a, int b) {
+        System.out.println("Sum of" +a+ "+"+b+ "=" +(a+b));
+    }
+    public void  add(double a, double b) {
+        System.out.println("Sum of" +a+ "+"+b+ "=" +(a+b));
+    }
+}
+
+public class MCoverloadingex {
+     public static void main(String[] args) {
+        Overloadex p1 = new Overloadex();
+        Overloadex p2 = new Overloadex("Ravikumar");
+        p1.add(5, 6);
+        p2.add(5.6, 6.4);
+     }
+}
