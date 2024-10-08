@@ -1,0 +1,35 @@
+import java.io.*;
+class Constructor
+{
+// constructor Overloading
+void Constructor()
+{
+System.out.println("Welcome");
+}
+Constructor(String name)
+{
+System.out.println("Welcome" +name);
+}
+
+//Method Overloading
+public void add(int a, int b) 
+{
+System.out.println("Sum of" +a+ "+" +b+ "=" +(a+b));
+}
+public void add(double a, double b)
+{
+System.out.println("Sum of" +a+ "+" +b+ "=" +(a+b));
+}
+}
+
+public class main 
+{
+public static void main (String[] args)
+{
+Constructor p1 = new Constructor();
+Constructor p2 = new Constuctor("Ravi");
+p1.add(5,6);
+p2.add(5.2, 8.5);
+}
+}
+
